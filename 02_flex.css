@@ -1,0 +1,36 @@
+body{
+    background-color: skyblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 500px;
+}
+h1{
+    text-align: center;
+}
+.or{
+    background-color: yellow;
+}
+.argent{
+    background-color: rgb(228, 227, 222);
+}
+.vert{
+    background-color: rgb(200, 245, 75);
+}
+.rose{
+    background-color: rgb(238, 184, 184);
+}
+/*flex*/
+.flex{
+    display: flex;
+    background-color: pink;
+    /*par défaut les enfants seront flex-direction: row; dans la rangée; row-reverse on inverse l'ordre des éléments, column de haut en bas et column-reverse on inverse l'ordre des éléments dans la hauteur*/
+    flex-direction: row;
+}
+.flex div{
+    padding: 5px;
+    margin: 5px;
+}

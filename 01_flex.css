@@ -24,27 +24,40 @@ h1{
 /*La propriété flex est une propriété raccourcie à modifier les dimensions d'un élément afin de remplir l'espace disponible de son conteneur.*/
 /*1- le parent est display-flex*/
 .d-flex{
+    background-color: orange;
     margin: auto;
     display: flex;
     /*3- si le parent est trop petit les div s'adaptent à la largeur du parent ils vont rentrer quoi qu'il arrive*/
-    width: 300px;
+    width: 600px;
+    height: 800px;
 
     /*4- so on a flex-wrap; wrap la largeur des enfants est respectée le 4e élément va à la ligne; avec ceci la lageur des enfants est respecté*/
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
 
     /*5- avec ceci: il met celui qui ne rentre pas dans le parent (ici le dernier élément4), passe en premier*/
-    /*flex-wrap: wrap-reverse;*/
+    flex-wrap: wrap-reverse;
 
-    /*flex-wrap: nowrap;*/
+    flex-wrap: nowrap;
     /*6- comportement normal ou par défaut; on force l'alignement et le redimensionnement des éléments donc ils vont rester inchanger*/
 
-    /*7-la justification des éléments avec justify-content ; flex-start par défaut, flex-end à la fin, center au centre, space-between: espacement entre chaque*/
-    justify-content: center;
+    /*7-la justification des éléments avec justify-content ; flex-start par défaut, flex-end à la fin, center au centre, space-between: espacement entre chaque, puis space-around et space-evenly*/
+    justify-content: space-evenly;
 
+    /*8- autre propriété la hauteur align-items et l'alignement vertical ; strech valeur par défaut, center au centre flex-start au début flex-end à la fin et baseline*/
+    align-items: center;
 }
 .d-flex div{
     /*2- toutes les div dans la div parente qui est flex ont une largeur définie*/
     width: 100px;
     border: 1px solid black;
     box-sizing: border-box;
+}
+.h-50{
+    height: 50%;
+}
+.h-75{
+    height: 75%;
+}
+.t-cap{
+    text-transform: uppercase;
 }

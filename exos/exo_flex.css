@@ -1,0 +1,62 @@
+body{
+    background-color: pink;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div{
+    margin: auto;
+    width: 1000px;
+    height: auto;
+    background-color: white;  
+}
+.flex{
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 900px;
+}
+.clear{
+    clear: both;
+}
+header{
+    margin: auto;
+    width: 900px;
+    height: 200px;
+    background-color: orange;
+    text-align: center;
+}
+header h1{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    letter-spacing: 0.5em;
+}
+h3{
+    border-bottom: 2px solid black; 
+}
+footer{
+    margin: auto;
+    width: 900px;
+    height: 300px;
+    text-align: center;
+    background-color: red;
+}
+figcaption{
+    position: relative;
+    top: -100px;
+}
+footer h2{
+    position: relative;
+    top: -60px;
+}
+em{
+    position: relative;
+    top: -100px;
+}
+address{
+    margin-top: 50px;
+    font-family: serif;
+    font-size: smaller;
+    text-transform: uppercase;
+    position: relative;
+    top: -100px;
+}
+

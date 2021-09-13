@@ -1,0 +1,163 @@
+/* style pour la page 3 sur flex - pisola CBS */
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    color: black;
+    text-align: justify;
+}
+.bleu-leger{
+    background-color: lightblue;
+}
+.vert-leger{
+    background-color: lightgreen;
+}
+.gris-leger{
+    background-color: gray;
+}
+.conteneur{
+    width: 100%;
+    background-color: white;
+}
+/*la classe pour créer une rangé*/
+.row{
+    display: flex;
+    flex-direction: row;
+    /*Passage à la ligne des éléments pour que la largeur des col soit respectée*/
+    flex-wrap: wrap;
+    row-gap: 5px;
+    margin-bottom: 5px ;
+    border: 5px solid orange;
+}
+/*la classe pour mettre les éléments les uns en dessous des autres*/
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.centre{
+    justify-content: center;
+}
+/* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
+.col-1 {
+    /* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
+    width: 8.333333%;
+    padding: 5px;
+}
+.col-2 {
+    width: 16.666666%;
+    padding: 5px;
+}
+.col-3 {
+    width: 25%;
+    padding: 5px;
+}
+.col-4 {
+    width: 33.333333%;
+    padding: 5px;
+}
+.col-5 {
+    width: 41.666666%;
+    padding: 5px;
+}
+.col-6 {
+    width: 50%;
+    padding: 5px;
+}
+.col-7 {
+    width: 58.333333%;
+    padding: 5px;
+}
+.col-8 {
+    width: 66.666666%;
+    padding: 5px;
+}
+.col-9 {
+    width: 75%;
+    padding: 5px;
+}
+.col-10{
+    width: 83.333333%;
+    padding: 5px;
+}
+.col-11{
+    width: 91.666666%;
+    padding: 5px;
+}
+.col-12 {
+    width: 100%;
+    padding: 5px;    
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+h1{
+    background: url("../img/dolomites01.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    width: 80%;
+}
+.transparent{
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+footer{
+    height: 200px;
+    background-color: rgb(95, 94, 94);
+}
+/*.col-3{
+    width: 25%;
+    padding: 4px;
+}
+/*la grille sur 12 colonnes, et la définition de la largeur des colonnes*/
+/*.col-6{
+    width: 50%;
+    padding: 4px;
+}
+.col-9{
+    width: 75%;
+    padding: 4px;
+}
+.col-12{
+    width: 100%;
+    padding: 4px;
+}*/

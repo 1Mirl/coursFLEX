@@ -1,12 +1,9 @@
-/* style pour la page 3 sur flex - pisola CBS */
+/*Une grille avec flex et en responsive - pisola CBS */
+body{
+    background-color: #fff;
+}
 *{
     box-sizing: border-box;
-}
-body {
-    background-color: gold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.1em;
-    color: black;
 }
 .bleu-leger{
     background-color: lightblue;
@@ -17,11 +14,10 @@ body {
 .gris-leger{
     background-color: gray;
 }
-.conteneur{
-    width: 100%;
-    background-color: white;
+main{
+    width: 1000px;
+    margin: 0 auto;
 }
-/*la classe pour créer une rangé*/
 .row{
     display: flex;
     flex-direction: row;
@@ -30,14 +26,6 @@ body {
     row-gap: 5px;
     margin-bottom: 5px ;
     border: 5px solid orange;
-}
-/*la classe pour mettre les éléments les uns en dessous des autres*/
-.column{
-    display: flex;
-    flex-direction: row;
-}
-.centre{
-    justify-content: center;
 }
 /* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
 .col-1 {
@@ -77,24 +65,50 @@ body {
     width: 75%;
     padding: 5px;
 }
+.col-10{
+    width: 83.333333%;
+    padding: 5px;
+}
+.col-11{
+    width: 91.666666%;
+    padding: 5px;
+}
 .col-12 {
     width: 100%;
     padding: 5px;    
 }
-/*.col-3{
-    width: 25%;
-    padding: 4px;
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
 }
-/*la grille sur 12 colonnes, et la définition de la largeur des colonnes*/
-/*.col-6{
-    width: 50%;
-    padding: 4px;
+.marge-2 {
+    margin-left: 16.66666%;
 }
-.col-9{
-    width: 75%;
-    padding: 4px;
+.marge-3 {
+    margin-left: 25%;
 }
-.col-12{
-    width: 100%;
-    padding: 4px;
-}*/
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}

@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>04 - Flex </title>
-    <link rel="stylesheet" href="04_flex.css">
+    <link rel="stylesheet" href="css/04_flex.css">
 
 </head>
 <body>
     <main class="conteneur">
 
        <header class="row">
-            <div class="col-2 column vert-leger">
-               <h5>Le 13/09/2021</h5>
+            <div class="col-1 column">
+               <h5 class="gris-leger">Le 13/09/2021</h5>
                <p class="bleu-leger">Tout sur la grille de mise en page!</p>
             </div>
-            <div class="col-8">
-                <h1>Une grille de mise en page</h1>
+            <div class="col-10">
+                <div class="row">
+                    <h1 class="col-10 marge-1"><span class="transparent">Une grille de mise en page</span></h1>
+                </div>
             </div>
-            <div class="col-2 vert-leger">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor animi quae quos quasi quidem omnis similique vitae, quis ut soluta quisquam, odit rerum pariatur unde magnam voluptas cumque at!</p>
+            <div class="col-1 vert-leger">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor animi quae quos quasi quidem omnis similique </p>
             </div>
        </header>
 
@@ -34,8 +36,9 @@
                <div class="col-6">
                    <p>Amet quo laboriosam corporis nulla porro iure aliquam architecto dicta nemo perferendis in qui nesciunt consequuntur ipsam, debitis sequi soluta quaerat expedita quasi? Consequatur dolorum molestiae excepturi, explicabo maxime alias.</p>
                </div>
-
            </div>
+           <!--fin rangée 1-->
+
            <div class="row">
                <div class="col-3">
                    <p>lorem</p>
@@ -50,6 +53,8 @@
                    <p>lorem</p>
                </div>
            </div>
+           <!--fin rangée 2-->
+
            <div class="row">
                <div class="col-3 bleu-leger">
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, qui! Eaque, consectetur non quae voluptas velit quam cum repellendus dolorum ducimus voluptatem in corporis enim. Aliquid, commodi ab. Quod, ipsum!</p>
@@ -58,6 +63,7 @@
                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa deserunt doloremque assumenda, ea qui error ab tenetur dolores cupiditate alias minus esse eius! Reprehenderit inventore molestias dolorum impedit praesentium dolor.</p>
                </div>
            </div>
+           <!--fin rangée 3-->
 
            <div class="row">
                <div class="bleu-leger col-4">RANGEE 4-1</div>
@@ -68,8 +74,9 @@
                <div class="col-1">6</div>
                <div class="vert-leger col-1">7</div>
            </div>
+           <!--fin rangée 4-->
 
-           <div class="row bleu-leger">
+           <div class="row">
                <div class="col-1">RANGEE 5-1</div>
                <div class="col-1">2</div>
                <div class="col-1">3</div>
@@ -83,6 +90,7 @@
                <div class="col-1">11</div>
                <div class="col-1">12</div>
            </div>
+           <!--fin rangée 5-->
         
            <div class="row">
                <div class="col-5 bleu-leger">
@@ -101,7 +109,29 @@
                    <h4 class="">Titre 4</h4>
                </div>
            </div>
+           <!--fin rangée 6-->
+
+           <div class="row">
+               <div class="col-8 marge-2">
+                   <p class="gris-leger">coucou</p>
+               </div>
+           </div>
+           <!--fin rangée 7-->
+
+           <div class="row">
+               <div class="col-3 vert-leger marge-5">
+                   <p>coucou</p>
+               </div>
+           </div>
+           <!--fin rangée 8-->
        </section>
+       <footer>
+           <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+           </div>
+       </footer>
        
     </main>
 </body>

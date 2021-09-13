@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mediaqueries</title>
+    <title>Première page responsive</title>
     <link rel="stylesheet" href="css/05_mediaqueries.css">
 
 </head>
 <body>
-    <div class="row bleu-leger">
-        <header class="col-3">
-            <h1> <a href="05_mediaqueries.html">Site responsive</a></h1>
+    <div id="en-tête" class="column-xs row bleu-leger">
+        <header class="col-xs-12 col-3">
+            <h1> <a href="05_mediaqueries.html">Page responsive</a></h1>
         </header>
-        <nav class="marge-6 col-3">
+        <nav class="col-xs-12 marge-xs marge-6 col-3">
             <div>
                 <a href="#">Menu 1</a>
                 <a href="#">Menu 2</a>
@@ -52,6 +52,16 @@
             </div>
         </section>
         <!--fin rangée 2-->
+
+        <section class="column-reverse row bleu-leger">
+            <div class="col-8">
+                <img src="img/dolomites01.jpg" alt="belle image en Italie" class="img-fluid">
+            </div>
+            <div class="col-4">
+                <h2>2/ Les dolomites en Italie</h2>
+                <p>Je voudrais visiter les Dolomites</p>
+            </div>
+        </section>
     </main>
 
     <footer class="row gris-leger">

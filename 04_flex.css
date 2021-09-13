@@ -14,6 +14,9 @@ body {
 .vert-leger{
     background-color: lightgreen;
 }
+.gris-leger{
+    background-color: gray;
+}
 .conteneur{
     width: 100%;
     background-color: white;
@@ -22,6 +25,19 @@ body {
 .row{
     display: flex;
     flex-direction: row;
+    /*Passage à la ligne des éléments pour que la largeur des col soit respectée*/
+    flex-wrap: wrap;
+    row-gap: 5px;
+    margin-bottom: 5px ;
+    border: 5px solid orange;
+}
+/*la classe pour mettre les éléments les uns en dessous des autres*/
+.column{
+    display: flex;
+    flex-direction: row;
+}
+.centre{
+    justify-content: center;
 }
 /* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
 .col-1 {

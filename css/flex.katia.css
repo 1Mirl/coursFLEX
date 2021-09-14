@@ -1,0 +1,9 @@
+body{
+    background-color: pink;
+}
+main{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+}

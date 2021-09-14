@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(241, 241, 169);
+}
+main{
+    background-color: white;
+    margin: auto;
+    width: 800px;
+}
+/*couleurs pour identifier*/
+.bleu{
+    background-color: lightblue;
+}
+.vert{
+    background-color: lightgreen;
+}
+.gris{
+    background-color: lightgray;
+}
+section{
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.colonne{
+    margin: 10px;
+    border: 1px dotted #000;
+    /*flex-grow et flex-shrink : nous voulons que nos colonnes se comportent de la même façon lorsqu'elles s'agrandissent ou se rapetissent*/
+    /*on donne la valeur 1 qui indique à flex-box comment augmenter cette taille si nécesaire*/
+    flex-grow: 1;
+    /*flex-shrink indique à flexbox comment réduire cette taille si nécessaire*/
+    flex-shrink: 1;
+    flex-basis: 0;
+    /*propriété raccourci: flex: 1 1 0; donc: grow, shrink, basis*/
+}
